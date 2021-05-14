@@ -1,6 +1,9 @@
 // DOM elements
 const paraContainer = document.querySelector(".para-container");
+const initialPara = document.querySelector(".initial-p");
+const generateButton = document.querySelector(".generate-btn");
 let paragraphs;
+let numberInput;
 
 const lines = new Array();
 
@@ -1121,10 +1124,13 @@ const randomIndex = () => {
   return Math.floor(Math.random() * lines.length + 1);
 };
 
+// Vary the length of the paragraphs occasionally
+const randLength = Math.floor(Math.random() * 2) === 0 ? 4 : 5;
+
 // Join lines into 1 paragraph
 const randomLines = () => {
   let para = [];
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i <= randLength; i++) {
     para += lines[randomIndex()].line;
   }
   return para;
@@ -1140,14 +1146,33 @@ const createPTag = (num) => {
   }
 };
 
-createPTag(4);
-console.log(paragraphs);
+let generatePara;
+
+// 1. Get input value, 2. create <p> that many times, 3. generate the paragraphs
+
+generateButton.addEventListener("click", function () {
+  numberInput = Number(document.getElementById("input-box").value);
+  if (numberInput === 1) {
+    generatePara();
+    console.log(`${paragraphs} paragraphs`);
+    paragraphs = 0;
+  }
+  if (numberInput > 1) {
+    createPTag(numberInput - 1);
+    generatePara();
+    console.log(`${paragraphs.length - 1} paragraphs`);
+    paragraphs = 0;
+  }
+});
 
 // Fill each paragraph with text
-const generatePara = () => {
-  for (let i = 0; i < paragraphs.length; i++) {
-    paragraphs[i].textContent = randomLines();
+generatePara = () => {
+  if (!paragraphs) initialPara.textContent = randomLines();
+  else {
+    for (let i = 0; i < paragraphs.length; i++) {
+      paragraphs[i].textContent = randomLines();
+    }
   }
 };
 
-generatePara();
+// Reset the DOM (delete P tags before re-gen)
