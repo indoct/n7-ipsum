@@ -6,13 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
     <title>Normandy Ipsum - Mass Effect Filler Text Generator</title>
 </head>
 
 <body>
     <section class="generator">
-        <div class="settings"><input type="text" width="20" id="input-box"><button class="generate-btn">Assume
-                Control</button>
+        <div class="settings"><input type="number" width="20" id="input-box" value="4" min="0" max="100">
+            <div class="select">
+                <select id="type-select">
+                    <option value="opt-paragraphs">Paragraphs</option>
+                    <option value="opt-sentences">Sentences</option>
+                    <option value="opt-words">Words</option>
+                </select>
+                <div class="select_arrow"></div>
+
+            </div><button class="generate-btn">Assume Control</button>
         </div>
         <div class="para-container">
             <p class="initial-p">This is where your text will magically appear.</p>
