@@ -950,7 +950,7 @@ lines[252] = {
 };
 lines[253] = {
   character: "Shepard",
-  line: "This place is run down, even for a prison",
+  line: "This place is run down, even for a prison. ",
 };
 lines[254] = {
   character: "Shepard",
@@ -1123,7 +1123,7 @@ lines[300] = {
 
 // Random index (line) generator
 const randomIndex = () => {
-  return Math.floor(Math.random() * lines.length + 1);
+  return Math.floor(Math.random() * lines.length);
 };
 
 // Vary the length of the paragraphs occasionally
@@ -1150,10 +1150,12 @@ const createPTag = (num) => {
 
 // Reset the paras if they've been generated already
 // 1. Get input value, 2. create <p> that many times, 3. generate the paragraphs
-
-generateButton.addEventListener("click", function () {
+const btnGenerate = () => {
   numberInput = Number(document.getElementById("input-box").value);
   resetParas();
+  if (!numberInput) {
+    alert("Please enter a number of paragraphs to generate");
+  }
   if (numberInput === 1) {
     generatePara();
   }
@@ -1161,7 +1163,9 @@ generateButton.addEventListener("click", function () {
     createPTag(numberInput - 1);
     generatePara();
   }
-});
+};
+
+generateButton.addEventListener("click", btnGenerate);
 
 // Fill each paragraph with text
 generatePara = () => {
