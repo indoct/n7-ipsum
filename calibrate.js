@@ -4,6 +4,8 @@ const initialPara = document.querySelector(".initial-p");
 const generateButton = document.querySelector(".generate-btn");
 let paragraphs;
 let numberInput;
+let generatePara;
+let resetParas;
 
 const lines = new Array();
 
@@ -1146,22 +1148,18 @@ const createPTag = (num) => {
   }
 };
 
-let generatePara;
-
+// Reset the paras if they've been generated already
 // 1. Get input value, 2. create <p> that many times, 3. generate the paragraphs
 
 generateButton.addEventListener("click", function () {
   numberInput = Number(document.getElementById("input-box").value);
+  resetParas();
   if (numberInput === 1) {
     generatePara();
-    console.log(`${paragraphs} paragraphs`);
-    paragraphs = 0;
   }
   if (numberInput > 1) {
     createPTag(numberInput - 1);
     generatePara();
-    console.log(`${paragraphs.length - 1} paragraphs`);
-    paragraphs = 0;
   }
 });
 
@@ -1175,4 +1173,13 @@ generatePara = () => {
   }
 };
 
-// Reset the DOM (delete P tags before re-gen)
+// Reset the DOM (delete P tags other than initial P before re-gen)
+resetParas = () => {
+  if (!paragraphs) return;
+  else {
+    for (let i = paragraphs.length - 1; i >= 1; i--) {
+      paragraphs[i].remove();
+    }
+  }
+  paragraphs[0].textContent = "";
+};
