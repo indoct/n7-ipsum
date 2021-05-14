@@ -1,7 +1,8 @@
 // DOM elements
-const paraContainer = document.querySelector(".para-container");
+const paraContainer = document.querySelector("#para-container");
 const initialPara = document.querySelector(".initial-p");
 const generateButton = document.querySelector(".generate-btn");
+const copyButton = document.querySelector(".copy-btn");
 let paragraphs;
 let numberInput;
 let generatePara;
@@ -319,7 +320,7 @@ lines[79] = {
 };
 lines[80] = {
   character: "Javik",
-  line: "To discover the most primitive races of my time now rule the galaxy. The asari, the humans, the turians.",
+  line: "To discover the most primitive races of my time now rule the galaxy. The asari, the humans, the turians. ",
 };
 lines[81] = { character: "Javik", line: "The lizard people evolved? " };
 lines[82] = { character: "Javik", line: "They used to eat flies. " };
@@ -1187,3 +1188,18 @@ resetParas = () => {
   }
   paragraphs[0].textContent = "";
 };
+
+// Copy text to clipboard
+const copyText = () => {
+  const range = document.createRange();
+  range.selectNode(document.getElementById("para-container"));
+  window.getSelection().removeAllRanges(); // clear current selection
+  window.getSelection().addRange(range); // to select text
+  document.execCommand("copy");
+  window.getSelection().removeAllRanges(); // to deselect
+  copyButton.textContent = "Copied!";
+  setTimeout(function () {
+    copyButton.textContent = "Copy Text";
+  }, 3000);
+};
+copyButton.addEventListener("click", copyText);
