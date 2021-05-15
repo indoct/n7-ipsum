@@ -1124,6 +1124,58 @@ lines[300] = {
   character: "EDI",
   line: "Do not worry, Shepard. I only forget to recycle the Normandy's oxygen when I've discovered something truly interesting. ",
 };
+lines[301] = {
+  character: "Tali",
+  line: "After time adrift among open stars, among tides of light and to shoals of dust, I will return to where I began. ",
+};
+lines[302] = {
+  character: "Saren",
+  line: "Is submission not preferable to extinction? ",
+};
+lines[303] = {
+  character: "Grunt",
+  line: "I don't need luck. I have ammo. ",
+};
+lines[304] = {
+  character: "Kaidan",
+  line: "Well that’s very comforting. Certain death for some, fine for us. ",
+};
+lines[305] = {
+  character: "Wrex",
+  line: "Tranquil, calm, relaxing... wake me when this is over. ",
+};
+lines[306] = {
+  character: "Mordin",
+  line: "Lots of ways to help people. Sometimes heal patients. Sometimes execute dangerous people. Either way helps. ",
+};
+lines[307] = {
+  character: "Joker",
+  line: "Can you believe this, Commander? It's my baby, better than new! It fits me like a glove! And leather seats! ",
+};
+lines[308] = {
+  character: "Sovereign",
+  line: "Organic life is nothing but a genetic mutation, an accident. ",
+};
+lines[309] = {
+  character: "Grunt",
+  line: "Ha! See, now we're having fun. Me remembering good deaths, and you with your... funny human thing you're doing. ",
+};
+lines[310] = {
+  character: "James",
+  line: "Uhh... Tech's not my specialty, but I'll pull a few wires and see what I can do. ",
+};
+lines[311] = {
+  character: "James",
+  line: "Rachni!? Of all the... It's like you have the opposite of a horseshoe up your ass. ",
+};
+lines[312] = {
+  character: "James",
+  line: "I guess he's gonna have to retire for health reasons. ",
+};
+lines[313] = {
+  character: "James",
+  line: "Jack's a pretty mean S.O.B., but kinda hot... I mean, if you're into that sort of thing. ",
+};
 
 // Random index (line) generator
 const randomIndex = () => {
@@ -1167,9 +1219,6 @@ const btnGenerate = () => {
     if (selectType.value === "sentences") {
       sentGen();
     }
-    if (selectType.value === "words") {
-      alert("Not functional yet");
-    }
   }
   if (numberInput > 1) {
     if (selectType.value === "paragraphs") {
@@ -1178,9 +1227,6 @@ const btnGenerate = () => {
     }
     if (selectType.value === "sentences") {
       sentGen();
-    }
-    if (selectType.value === "words") {
-      alert("Not functional yet");
     }
   }
 };
