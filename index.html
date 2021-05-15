@@ -7,12 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Zen+Dots&display=swap"
+        rel="stylesheet">
     <title>Normandy Ipsum - Mass Effect Filler Text Generator</title>
 </head>
 
 <body>
-    <section class="generator">
+    <main>
+        <div class="info">
+            <h1>Therum Ipsum</h1>
+            <hr>
+            <h2>Mass Effect Lorem Ipsum Filler Text Generator</h2>
+            <p class="info-p">I could shoot someone if it would make you feel better. I see. There are a number of
+                pharmaceuticals I could inject to simulate the desired emotional state. Laser dot trembles on the skull.
+                Spice on the spring wind. Sunset eyes defiant in the scope.
+            </p>
+            <p class="info-p"><a href="https://unsplash.com/photos/9HBFnpoB678">Vincent Ledvina</a></p>
+
+        </div>
+        <div id="para-container">
+            <p class="initial-p">This is where your text will magically appear.</p>
+        </div>
         <div class="settings"><input type="number" width="20" id="input-box" value="4" min="0" max="100">
             <div class="select">
                 <select id="type-select">
@@ -25,11 +40,8 @@
             <button class="generate-btn">Assume Control</button>
             <button class="copy-btn">Copy Text</button>
         </div>
-        <div id="para-container">
-            <p class="initial-p">This is where your text will magically appear.</p>
-        </div>
-    </section>
-    <script src="calibrate.js"></script>
+        <script src="calibrate.js"></script>
+    </main>
 </body>
 
 </html>
