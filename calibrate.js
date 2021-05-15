@@ -1,8 +1,11 @@
+/* Hand-coded with ♥ by SCHO (https://scho.work) */
+
 // DOM elements
 const paraContainer = document.querySelector("#para-container");
 const initialPara = document.querySelector(".initial-p");
 const generateButton = document.querySelector(".generate-btn");
 const copyButton = document.querySelector(".copy-btn");
+const selectType = document.getElementById("type-select");
 let paragraphs;
 let numberInput;
 let generatePara;
@@ -1155,14 +1158,30 @@ const btnGenerate = () => {
   numberInput = Number(document.getElementById("input-box").value);
   resetParas();
   if (!numberInput) {
-    alert("Please enter a number of paragraphs to generate");
+    alert(`Please enter a number of ${selectType.value} to generate`);
   }
   if (numberInput === 1) {
-    generatePara();
+    if (selectType.value === "paragraphs") {
+      generatePara();
+    }
+    if (selectType.value === "sentences") {
+      sentGen();
+    }
+    if (selectType.value === "words") {
+      alert("Not functional yet");
+    }
   }
   if (numberInput > 1) {
-    createPTag(numberInput - 1);
-    generatePara();
+    if (selectType.value === "paragraphs") {
+      createPTag(numberInput - 1);
+      generatePara();
+    }
+    if (selectType.value === "sentences") {
+      sentGen();
+    }
+    if (selectType.value === "words") {
+      alert("Not functional yet");
+    }
   }
 };
 
@@ -1187,6 +1206,16 @@ resetParas = () => {
     }
   }
   paragraphs[0].textContent = "";
+};
+
+// Sentence (individual lines) generator
+const sentGen = () => {
+  resetParas();
+  numberInput = Number(document.getElementById("input-box").value);
+  createPTag(numberInput);
+  for (let j = 0; j < paragraphs.length - 1; j++) {
+    paragraphs[j].textContent = lines[randomIndex()].line;
+  }
 };
 
 // Copy text to clipboard
