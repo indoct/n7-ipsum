@@ -36,7 +36,7 @@ h2 {
 
 main {
   display: grid;
-  grid-template-columns: 0.3fr 350px 1fr 1fr 0.3fr;
+  grid-template-columns: 0.2fr 350px 1fr 1fr 0.2fr;
   grid-template-rows: 100px 1fr;
   gap: 30px 20px;
 }
@@ -64,22 +64,18 @@ main {
     grid-template-columns: 1fr;
   }
   .btns-container {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    padding-top: 15px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 15px;
   }
   .generate-btn {
-    width: 70%;
     margin: 0;
   }
   main .copy-btn {
-    width: 30%;
     border: 1px solid rgba(255, 255, 255, 0.4);
   }
   #type-select {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   main #input-box {
     padding-left: 0;
