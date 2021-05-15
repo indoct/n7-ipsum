@@ -61,13 +61,7 @@ main {
     padding: 0;
   }
   main .settings {
-    flex-flow: column;
-    align-items: flex-start;
-  }
-  .para-select {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+    grid-template-columns: 1fr;
   }
   .btns-container {
     display: flex;
@@ -107,6 +101,10 @@ main {
   }
 }
 
+.para-select {
+  display: flex;
+}
+
 .info {
   color: #fff;
   padding: 0 10% 0 6%;
@@ -137,7 +135,13 @@ hr {
 }
 
 .built-by a {
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: underline;
+}
+
+.built-by a:hover {
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .info-p {
@@ -147,10 +151,9 @@ hr {
 }
 
 .settings {
-  display: flex;
-  flex-flow: row;
-  align-items: flex-end;
-  align-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
 }
 
 .select {
@@ -220,7 +223,7 @@ button {
 }
 
 .generate-btn {
-  min-width: 150px;
+  /* min-width: 150px; */
   background: transparent;
   color: var(--dark-bluegrey);
   transition: all 0.5s;
@@ -269,7 +272,7 @@ button {
 }
 
 .copy-btn {
-  width: 120px;
+  /* width: 120px; */
   background-color: var(--lighter-bluegrey);
   color: white;
   text-shadow: 0 0 3px black;
