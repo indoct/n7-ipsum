@@ -25,21 +25,26 @@
             <p class="info-p"><a href="https://unsplash.com/photos/9HBFnpoB678">Vincent Ledvina</a></p>
 
         </div>
+        <div class="settings">
+            <div class="para-select">
+                <input type="number" width="20" id="input-box" value="4" min="0" max="100">
+                <div class="select">
+                    <select id="type-select">
+                        <option value="paragraphs">Paragraphs</option>
+                        <option value="sentences">Sentences</option>
+                    </select>
+                    <div class="select_arrow"></div>
+                </div>
+            </div>
+            <div class="btns-container">
+                <button class="generate-btn">Assume Control</button>
+                <button class="copy-btn">Copy Text</button>
+            </div>
+        </div>
         <div id="para-container">
             <p class="initial-p">This is where your text will magically appear.</p>
         </div>
-        <div class="settings"><input type="number" width="20" id="input-box" value="4" min="0" max="100">
-            <div class="select">
-                <select id="type-select">
-                    <option value="paragraphs">Paragraphs</option>
-                    <option value="sentences">Sentences</option>
-                </select>
-                <div class="select_arrow"></div>
 
-            </div>
-            <button class="generate-btn">Assume Control</button>
-            <button class="copy-btn">Copy Text</button>
-        </div>
         <script src="calibrate.js"></script>
     </main>
 </body>
