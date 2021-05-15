@@ -1199,19 +1199,22 @@ const createPTag = (num) => {
   let paraCount = num;
   for (let i = 0; i < paraCount; i++) {
     const element = document.createElement("p");
+    element.className = "quote-paras";
     paraContainer.appendChild(element);
-    paragraphs = document.getElementsByTagName("p");
+    paragraphs = document.getElementsByClassName("quote-paras");
   }
+  initialPara.classList.add("quote-paras");
 };
 
 // Reset the paras if they've been generated already
 // 1. Get input value, 2. create <p> that many times, 3. generate the paragraphs
 const btnGenerate = () => {
   numberInput = Number(document.getElementById("input-box").value);
-  resetParas();
+
   if (!numberInput) {
     alert(`Please enter a number of ${selectType.value} to generate`);
   }
+  resetParas();
   if (numberInput === 1) {
     if (selectType.value === "paragraphs") {
       generatePara();
