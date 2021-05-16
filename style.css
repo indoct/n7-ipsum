@@ -100,7 +100,7 @@ hr {
 }
 
 .info-p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-align: justify;
   justify-content: left;
 }
@@ -371,7 +371,7 @@ p {
 }
 
 /* Ultra Wide */
-@media screen and (min-width: 2160px) {
+@media screen and (min-width: 1920px) {
   main {
     grid-template-columns: repeat(5, 1fr);
   }
@@ -380,7 +380,9 @@ p {
 /* 4K */
 @media screen and (min-width: 3440px) {
   main {
-    grid-template-columns: 25% 1fr 0.8fr 0.8fr 25%;
+    grid-template-columns: 20% 1fr 1fr 1fr 20%;
+    grid-template-rows: 10em 1fr;
+    gap: 20px 5em;
   }
   h1 {
     font-size: 4em;
