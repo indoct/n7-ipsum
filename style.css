@@ -1,7 +1,9 @@
 :root {
-  --dark-bluegrey: #1b1e21;
-  --lighter-bluegrey: #272b2f;
-  --red-highlight: #f73f3b;
+  --n7-black: #0d0c0c;
+  --n7-white: #fdfdfd;
+  --n7-pgrey: #d3d3d3;
+  --n7-dgrey: #a5a5a5;
+  --n7-red: #e42f45;
 }
 
 html,
@@ -12,21 +14,25 @@ button {
   font-family: "Rubik", sans-serif;
 }
 
+.container,
+.container-xl {
+  max-width: 1140px;
+}
+
 body {
-  background: var(--dark-bluegrey) url("images/starfield.jpg") center
-    center/cover no-repeat fixed;
-  font-size: 15px;
+  background: var(--n7-black);
+  color: var(--n7-white);
 }
 
 h1 {
   font-family: "Zen Dots", monospace;
-  font-size: 2.6em;
+  font-size: 4em;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
 }
 
-h2 {
+h3 {
   font-family: "Inconsolata", monospace;
   font-size: 1.3rem;
   font-weight: 600;
@@ -34,7 +40,16 @@ h2 {
   padding-right: 20px;
 }
 
-main {
+.options {
+  max-width: 1050px;
+  background-color: var(--n7-white);
+}
+
+.options p {
+  margin-bottom: 0;
+}
+
+/* main {
   display: grid;
   grid-template-columns: 0.2fr 350px 1fr 1fr 0.2fr;
   grid-template-rows: 7em 1fr;
@@ -48,17 +63,17 @@ main {
 }
 .settings {
   grid-area: 1 / 3 / 2 / 5;
-}
+} */
 
-.para-select {
+/* .para-select {
   display: flex;
-}
-
+} */
+/* 
 .btns-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
   margin-top: 15px;
-}
+} */
 
 .info {
   color: #fff;
@@ -67,8 +82,8 @@ main {
 
 hr {
   width: 55%;
-  border-color: var(--red-highlight);
-  background-color: var(--red-highlight);
+  border-color: var(--n7-red);
+  background-color: var(--n7-red);
   height: 1px;
   margin: -5px auto 25px 0;
   text-align: left;
@@ -115,14 +130,13 @@ hr {
 .select {
   position: relative;
   display: inline-block;
-  width: 100%;
 }
 
 #input-box {
-  width: 50px;
-  height: 50px;
+  width: 57px;
+  height: 57px;
   font-size: 1.8rem;
-  color: var(--red-highlight);
+  color: var(--n7-red);
   text-align: center;
   padding-left: 15px;
   margin-right: 10px;
@@ -132,14 +146,11 @@ hr {
   font-size: 1.6em;
   height: 56px;
   display: inline-block;
-  width: 100%;
   cursor: pointer;
-  padding: 10px 15px;
+  padding: 8px 50px 10px 28px;
   outline: 0;
-  border: 0px solid #000000;
+  border: 1px solid #000000;
   border-radius: 0px;
-  background: #e6e6e6;
-  color: #7b7b7b;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -152,6 +163,8 @@ hr {
 #type-select:focus {
   color: #000000;
   background: #cccccc;
+  padding: 6px 50px 10px 28px;
+  border: 3px solid var(--n7-red);
 }
 #type-select:disabled {
   opacity: 0.5;
@@ -187,7 +200,7 @@ button {
 }
 .generate-btn:hover {
   cursor: pointer;
-  color: var(--red-highlight);
+  color: var(--n7-red);
   text-shadow: 1px 1px 3px black;
 }
 .generate-btn::before {
@@ -198,7 +211,7 @@ button {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: var(--red-highlight);
+  background-color: var(--n7-red);
   transition: all 0.3s;
 }
 .generate-btn:hover::before {
@@ -215,7 +228,7 @@ button {
   z-index: 1;
   opacity: 0;
   transition: all 0.3s;
-  border: 1px solid var(--red-highlight);
+  border: 1px solid var(--n7-red);
   transform: scale(1.2, 1.2);
 }
 .generate-btn:hover::after {
