@@ -275,7 +275,7 @@ lines[66] = {
 };
 lines[67] = {
   char: "Kaidan",
-  line: "When you look out and see something this beautiful , well, it really helps you understand what we're fighting to save. ",
+  line: "When you look out and see something this beautiful, well, it really helps you understand what we're fighting to save. ",
 };
 lines[68] = {
   char: "Shepard",
@@ -1163,7 +1163,7 @@ lines[309] = {
 };
 lines[310] = {
   char: "James",
-  line: "Uhh... Tech's not my specialty, but I'll pull a few wires and see what I can do. ",
+  line: "Tech's not really my specialty, but I'll pull a few wires, see what comes out. ",
 };
 lines[311] = {
   char: "James",
@@ -1176,6 +1176,38 @@ lines[312] = {
 lines[313] = {
   char: "James",
   line: "Jack's a pretty mean S.O.B., but kinda hot... I mean, if you're into that sort of thing. ",
+};
+lines[314] = {
+  char: "James",
+  line: "Do you hear that hum? Is that just me? ",
+};
+lines[315] = {
+  char: "James",
+  line: "Commander, didn't you tell Cerberus to go to hell after you destroyed the Collector Base? ",
+};
+lines[316] = {
+  char: "James",
+  line: "Oh, that's not even the best part. They left behind an egg. It hatched, and I trained it to let me fly it. ",
+};
+lines[317] = {
+  char: "James",
+  line: "Please! I fought off a dozen angry batarians on Omega singlehandedly. ",
+};
+lines[318] = {
+  char: "Grunt",
+  line: "I'd never stab you in the back, Shepard. Warriors like you and me — straight to the face. ",
+};
+lines[319] = {
+  char: "Grunt",
+  line: "I didn't think people lived like this. Drinks! Fights! Noise! ",
+};
+lines[320] = {
+  char: "Grunt",
+  line: "Battlemaster, I have everything. Clan, kin and enemies to fight. ",
+};
+lines[321] = {
+  char: "Grunt",
+  line: "Something to think about — if you killed the most dangerous thing in the galaxy, that leaves... us. ",
 };
 
 // Random index (line) generator
