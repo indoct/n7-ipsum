@@ -1,4 +1,4 @@
-/* Hand-coded with ♥ by SCHO (https://scho.work) */
+/* Hand-coded with ♥ by SCHO (https://scho.pro) */
 "use strict";
 
 // DOM elements
@@ -291,7 +291,7 @@ lines[70] = {
 };
 lines[71] = {
   char: "Sovereign",
-  line: "The pattern has repeated itself more times than you can fathom. Organic civilizations rise, evolve, advance. And at the apex of their glory, they are extinguished. The Protheans were not the first. They did not create the citadel. They did not forge the mass relays. They merely found them. The legacy of my kind. ",
+  line: "The pattern has repeated itself more times than you can fathom. Organic civilizations rise, evolve, advance. And at the apex of their glory, they are extinguished. ",
 };
 lines[72] = {
   char: "Sovereign",
@@ -379,7 +379,7 @@ lines[95] = {
 };
 lines[96] = {
   char: "Liara",
-  line: "Is that right? You're a yahg, a pre-spaceflight species that was quarantined to their homeworld for massacring the Council's first contact teams. This base is older than your planet's discovery, so I'm guessing you killed the original Shadow Broker 60 years ago, then took his place. I'm guessing that you were taken from your homeworld by a trophy hunter who wanted a slave or a pet. How am I doing? ",
+  line: "Is that right? You're a yahg, a pre-spaceflight species that was quarantined to their homeworld for massacring the Council's first contact teams. ",
 };
 lines[97] = {
   char: "Sovereign",
@@ -707,7 +707,7 @@ lines[183] = {
 };
 lines[184] = {
   char: "Thane",
-  line: "Consider. The ocean is full of life. Yet it is not life as you and I know it. To survive there, you must release your hold on land. Accept a new way of living. So it is with the death. The soul must accept its departure from the body. If it can't, it will be lost. ",
+  line: "Consider. The ocean is full of life. Yet it is not life as you and I know it. To survive there, you must release your hold on land. Accept a new way of living. So it is with the death. ",
 };
 lines[185] = {
   char: "Thane",
@@ -871,7 +871,7 @@ lines[230] = {
 };
 lines[231] = {
   char: "Garrus",
-  line: "Loudspeakers? Someone likes the sound of their voice. ",
+  line: "Loudspeakers? Someone likes the sound of their own voice. ",
 };
 lines[232] = {
   char: "Liara",
@@ -1209,6 +1209,82 @@ lines[321] = {
   char: "Grunt",
   line: "Something to think about — if you killed the most dangerous thing in the galaxy, that leaves... us. ",
 };
+lines[322] = {
+  char: "Liara",
+  line: "This base is older than your planet's discovery, so I'm guessing you killed the original Shadow Broker 60 years ago, then took his place. ",
+};
+lines[323] = {
+  char: "Liara",
+  line: "But it is important to remember our history... Even if those memories make us uncomfortable. ",
+};
+lines[324] = {
+  char: "Liara",
+  line: "Why is the music in these places always so loud? It almost seems as if the people here want an excuse not to talk to each other. ",
+};
+lines[325] = {
+  char: "Liara",
+  line: "I get the feeling this conversation's going to be strictly one-sided. ",
+};
+lines[326] = {
+  char: "Liara",
+  line: "I've written over a dozen studies on your species. I've published in several journals... ",
+};
+lines[327] = {
+  char: "Liara",
+  line: "Their attacks are disorganized. They'd be more effective if they all attacked at once. ",
+};
+lines[328] = {
+  char: "Tali",
+  line: "It's actually getting a little harder to get it into the slot. I think that means it's working. ",
+};
+lines[329] = {
+  char: "Tali",
+  line: "Shouldn't we be worrying about the impenetrable vault we've been sealed inside forever? ",
+};
+lines[330] = {
+  char: "Tali",
+  line: "I remember first meeting Shepard. All I kept thinking was, 'I hope he took a shower, because my filter needs replacing, and humans carry a lot of germs.' ",
+};
+lines[331] = {
+  char: "Tali",
+  line: "You're like the crazy head-butting uncle I never had. ",
+};
+lines[332] = {
+  char: "Tali",
+  line: "Young males of all species have strange ideas of what the Asari are like. ",
+};
+lines[333] = {
+  char: "Tali",
+  line: "At least you can dress up. What can I do? I'm already wearing my two sexiest belts! ",
+};
+lines[334] = {
+  char: "Tali",
+  line: "And I thought I had a good poker face. ",
+};
+lines[335] = {
+  char: "Tali",
+  line: "Spiders, spiders, spiders, spiders! ",
+};
+lines[336] = {
+  char: "Tali",
+  line: "Hey, that's cheating! We're on a ladder! ",
+};
+lines[337] = {
+  char: "Tali",
+  line: "There were too many. Lost my shields. Suit ruptures...too many...Keelah se'lai... ",
+};
+lines[338] = {
+  char: "Tali",
+  line: "The fact that you performed surgery on your childhood toys explains a great deal, Admiral. ",
+};
+lines[339] = {
+  char: "Thane",
+  line: "The soul must accept its departure from the body. If it can't, it will be lost. ",
+};
+lines[339] = {
+  char: "Sovereign",
+  line: "The Protheans were not the first. They did not create the citadel. They did not forge the mass relays. They merely found them. The legacy of my kind. ",
+};
 
 // Random index (line) generator
 const randomIndex = () => {
@@ -1227,6 +1303,12 @@ const randomLines = () => {
   return para;
 };
 
+// Fix classes on the placeholder paragraph
+const classMatch = () => {
+  initialPara.classList.remove("initial");
+  initialPara.classList.add("quote-paras");
+};
+
 // Create paragraphs depending on user input
 const createPTag = (num) => {
   let paraCount = num;
@@ -1236,7 +1318,7 @@ const createPTag = (num) => {
     paraContainer.appendChild(element);
     paragraphs = document.getElementsByClassName("quote-paras");
   }
-  initialPara.classList.add("quote-paras");
+  classMatch();
 };
 
 // Reset the paras if they've been generated already
@@ -1250,6 +1332,7 @@ const btnGenerate = () => {
   resetParas();
   if (numberInput === 1) {
     if (selectType.value === "paragraphs") {
+      classMatch();
       generatePara();
     }
     if (selectType.value === "sentences") {
