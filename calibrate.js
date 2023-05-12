@@ -3,7 +3,7 @@
 
 // DOM elements
 const paraContainer = document.querySelector("#para-container");
-const initialPara = document.querySelector(".initial-p");
+const initialPara = document.querySelector(".initial");
 const generateButton = document.querySelector(".generate-btn");
 const copyButton = document.querySelector(".copy-btn");
 const selectType = document.getElementById("type-select");

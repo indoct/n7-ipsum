@@ -20,9 +20,11 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Rubik&family=Zen+Dots&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/bny5kmc.css" />
+    <link rel="stylesheet" href="style.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-21KGR7RWDX"></script>
     <script>
@@ -41,19 +43,19 @@
 
   <body>
     <div class="container-fluid" id="app-container">
-      <div class="container-fluid border-bottom">
+      <div class="container-fluid hfluid">
         <header class="container d-flex align-items-center py-3 mt-5 justify-content-between">
-          <a href="/" class="d-flex align-items-center text-decoration-none">
-            <h1>N7 Ipsum</h1>
+          <a href="/" class="title">
+            <h1><span class="red">N7</span> Ipsum</h1>
           </a>
-          <h3>A Mass Effect Lorem Ipsum Filler Text Generator</h3>
+          <h3>A Mass Effect Lorem Ipsum <br />Filler Text Generator</h3>
         </header>
       </div>
       <section id="hero">
         <div class="container my-5">
           <div class="row align-items-start">
             <div class="col-lg-7">
-              <p>
+              <p class="intro">
                 Why use Lorem ipsum classic when you can use placeholder quotes by Shepard, Garrus, Liara, Mordin, Tali and all your other favorite space
                 heroes?
               </p>
@@ -63,10 +65,10 @@
       </section>
 
       <div class="container text-center my-5 options">
-        <div class="row para-select p-2">
-          <div class="col col-lg-7 d-flex flex-row justify-content-around align-items-center">
+        <div class="row para-select">
+          <div class="col-lg-7 d-flex flex-row justify-content-center align-items-center opt-container">
             <p class="text-dark">EDI, generate</p>
-            <input type="number" width="50" id="input-box" value="4" min="0" max="100" />
+            <input type="number" width="50" id="input-box" value="5" min="0" max="100" />
             <div class="select">
               <select id="type-select">
                 <option value="paragraphs">Paragraphs</option>
@@ -75,21 +77,26 @@
               <div class="select_arrow"></div>
             </div>
 
-            <p class="text-dark">of N7 Ipsum</p>
+            <p class="text-dark">of N7 Ipsum.</p>
           </div>
-          <div class="col col-lg-5 btns-container"><button class="generate-btn">Assume Control</button> <button class="copy-btn">Copy Text</button></div>
+          <div class="col-lg-5 btns-container d-flex align-items-stretch">
+            <button class="generate-btn">Assume Control</button>
+            <button class="copy-btn">Copy Text</button>
+          </div>
         </div>
       </div>
       <div class="container">
-        <div class="row">
+        <div class="row content-row">
           <div class="col">
             <div id="para-container">
-              <p class="initial-p">Board is green, stealth systems engaged. Running silent.</p>
+              <p class="initial">Board is green, stealth systems engaged. Running silent.</p>
             </div>
           </div>
         </div>
       </div>
+      <div class="bg-ellipse-1"></div>
     </div>
+
     <!-- <main>
         <div class="info">
             <h1>N7 Ipsum</h1>
