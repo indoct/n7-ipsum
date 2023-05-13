@@ -4,6 +4,7 @@
   --n7-pgrey: #d3d3d3;
   --n7-mgrey: #a5a5a5;
   --n7-dgrey: #222020;
+  --n7-muted: #5c5c5c;
   --n7-red: #e42f45;
 }
 
@@ -33,15 +34,14 @@ body,
 p,
 select,
 button {
-  font-family: stratos, sans-serif;
-  font-weight: 400;
+  font-family: stratos-lights, sans-serif;
+  font-weight: 300;
   font-style: normal;
 }
 
 .intro {
-  font-family: stratos-lights, sans-serif;
   font-size: 1.3rem;
-  font-weight: 300;
+  color: var(--n7-mgrey);
 }
 
 .container,
@@ -75,12 +75,12 @@ h1 {
 }
 
 h3 {
-  font-family: stratos, "Space Grotesk", sans-serif;
+  font-family: stratos-lights, sans-serif;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.4;
   text-transform: uppercase;
-  color: var(--n7-mgrey);
+  color: var(--n7-muted);
   font-style: italic;
   text-align: right;
   letter-spacing: 0.0325rem;
@@ -92,16 +92,27 @@ h3 {
   position: relative;
 }
 
+.normandy {
+  background: url(../images/normandy.png) no-repeat 0 0;
+  position: absolute;
+  background-size: contain;
+  right: 215px;
+  top: 19px;
+  height: 100%;
+  width: 100%;
+  max-width: 1280px;
+  opacity: 0.08;
+  transform: rotateY(197deg);
+}
+
 .options p,
 .initial {
   margin-bottom: 0;
 }
 
 .initial {
-  color: #5c5c5c;
-  padding-top: 7em;
-  padding-bottom: 5em;
-  font-size: 0.92rem;
+  color: var(--n7-muted);
+  padding: 4rem 0;
   text-align: center;
   font-style: italic;
 }
@@ -306,7 +317,7 @@ input {
 }
 
 #para-container {
-  background: hsl(0deg 0% 0% / 42%);
+  background: hsl(0deg 0% 0% / 38%);
   padding: 6em 8em 4em;
   line-height: 1.5;
   font-size: 1.13rem;
@@ -316,6 +327,15 @@ input {
 .quote-paras {
   font-family: stratos-lights, sans-serif;
   font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.53;
+}
+
+.copyright {
+  color: var(--n7-muted);
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-bottom: 0;
 }
 /* p {
   font-size: 1.05rem;

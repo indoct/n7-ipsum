@@ -303,7 +303,7 @@ lines[73] = {
 };
 lines[74] = {
   char: "Mordin",
-  line: " Asari-vorcha offspring have an allergy to dairy, and  da-di-di-dee-di-doo-doo-doo-doo-doo-doo-doo-di-di-di ",
+  line: "Asari-vorcha offspring have an allergy to dairy, and da-di-di-dee-di-doo-doo-doo-doo-doo-doo-doo-di-di-di. ",
 };
 lines[75] = {
   char: "Shepard",
@@ -907,7 +907,7 @@ lines[238] = {
 };
 lines[239] = {
   char: "TIM",
-  line: "They're just trying to control us. Think about it: If they wanted all organic life destroyed, they could it. There would be nothing left. ",
+  line: "They're just trying to control us. Think about it: If they wanted all organic life destroyed, they could do it. There would be nothing left. ",
 };
 lines[240] = {
   char: "TIM",
@@ -951,7 +951,7 @@ lines[251] = {
 };
 lines[252] = {
   char: "Garrus",
-  line: "We can disobey suicide orders? Why wasn't I told? That's about twice a day. ",
+  line: "We can disobey suicide orders? Why wasn't I told? ",
 };
 lines[253] = {
   char: "Shepard",
@@ -1055,7 +1055,7 @@ lines[278] = {
 lines[279] = { char: "EDI", line: "That is a joke. " };
 lines[280] = {
   char: "EDI",
-  line: "Clan Urdnot has increased in strength after the destruction of Clan Weyrlock. In addition killing the thresher maw has produced several breeding requests for Grunt, and one for Shepard. ",
+  line: "In addition, killing the thresher maw has produced several breeding requests for Grunt, and one for Shepard. ",
 };
 lines[281] = { char: "EDI", line: "Really, Commander? " };
 lines[282] = { char: "EDI", line: "Probing Uranus. " };
