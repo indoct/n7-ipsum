@@ -486,7 +486,7 @@ lines[129] = {
 };
 lines[130] = {
   char: "Ashley",
-  line: "Why is it that whenever someone says 'with all due respect', they really mean 'kiss my ass?' ",
+  line: "Why is it that whenever someone says 'with all due respect', they really mean 'kiss my ass'? ",
 };
 lines[131] = {
   char: "Jacob",
