@@ -44,15 +44,21 @@
   <body>
     <div class="container-fluid" id="app-container">
       <div class="container-fluid hfluid">
-        <header class="container d-flex align-items-center py-3 mt-5 justify-content-between">
-          <a href="/" class="title">
-            <h1><span class="red">N7</span> Ipsum</h1>
-          </a>
-          <h3>A Mass Effect Lorem Ipsum <br />Filler Text Generator</h3>
+        <header class="container py-3 mt-3 mt-md-5 justify-content-between">
+          <div class="row">
+            <div class="col-12 col-md-9">
+              <a href="/" class="title">
+                <h1><span class="red">N7</span> Ipsum</h1>
+              </a>
+            </div>
+            <div class="col-12 col-md-3 align-self-center">
+              <h3>A Mass Effect Lorem Ipsum Filler Text Generator</h3>
+            </div>
+          </div>
         </header>
       </div>
       <section id="hero">
-        <div class="container my-5">
+        <div class="container my-3 my-md-5">
           <div class="row align-items-start">
             <div class="col-lg-6">
               <p class="intro">
@@ -65,10 +71,10 @@
         </div>
       </section>
 
-      <div class="container text-center my-5 options">
+      <div class="container text-center my-3 my-md-5 options">
         <div class="row para-select">
-          <div class="col-lg-7 d-flex flex-row justify-content-center align-items-center opt-container">
-            <p class="text-dark">EDI, generate</p>
+          <div class="col-lg-7 d-flex opt-container">
+            <p>EDI, generate</p>
             <input type="number" width="50" id="input-box" value="5" min="0" max="100" />
             <div class="select">
               <select id="type-select">
@@ -78,7 +84,7 @@
               <div class="select_arrow"></div>
             </div>
 
-            <p class="text-dark">of N7 Ipsum.</p>
+            <p>of N7 Ipsum.</p>
           </div>
           <div class="col-lg-5 btns-container d-flex align-items-stretch">
             <button class="generate-btn">Assume Control</button>
@@ -90,7 +96,7 @@
         <div class="row content-row">
           <div class="col">
             <div id="para-container">
-              <p class="initial">Board is green, stealth systems engaged. Running silent.</p>
+              <p class="initial">Board is green, stealth systems engaged.<br />Running silent.</p>
             </div>
           </div>
         </div>
@@ -108,39 +114,6 @@
         </div>
       </footer>
     </div>
-
-    <!-- <main>
-        <div class="info">
-            <h1>N7 Ipsum</h1>
-            <hr>
-            <h2>Mass Effect Lorem Ipsum Filler Text Generator</h2>
-            <p class="info-p">Why use Lorem ipsum classic when you can use placeholder quotes by Shepard, Garrus, Tali,
-                Mordin, Liara and all your other favorite space heroes?
-                <br>
-            <p class="built-by">built by <a href="https://scho.work" target="_blank">scho.work</a></p>
-            </p>
-
-        </div>
-        <div class="settings">
-            <div class="para-select">
-                <input type="number" width="20" id="input-box" value="4" min="0" max="100">
-                <div class="select">
-                    <select id="type-select">
-                        <option value="paragraphs">Paragraphs</option>
-                        <option value="sentences">Sentences</option>
-                    </select>
-                    <div class="select_arrow"></div>
-                </div>
-            </div>
-            <div class="btns-container">
-                <button class="generate-btn">Assume Control</button>
-                <button class="copy-btn">Copy Text</button>
-            </div>
-        </div>
-        <div id="para-container">
-            <p class="initial-p">This is where your text will magically appear.</p>
-        </div>
-    </main> -->
-    <script src="calibrate.js"></script>
+    <script src="calibrate.js" type="module"></script>
   </body>
 </html>
