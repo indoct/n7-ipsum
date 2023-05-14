@@ -341,6 +341,7 @@ input {
   font-size: 0.8rem;
   font-style: italic;
   margin-bottom: 0;
+  line-height: 1.4;
 }
 /* p {
   font-size: 1.05rem;
@@ -398,7 +399,6 @@ input {
   }
   .quote-paras {
     font-size: 1rem;
-    line-height: 1.4;
   }
   .content-row .col {
     padding: 0 !important;
