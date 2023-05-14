@@ -8,12 +8,6 @@
   --n7-red: #e42f45;
 }
 
-a {
-  color: var(--n7-red);
-  font-size: 1.05rem;
-  text-decoration: none;
-}
-
 .bg-ellipse-1 {
   border: 400px solid;
   position: fixed;
@@ -43,6 +37,18 @@ button {
   font-family: stratos-lights, sans-serif;
   font-weight: 300;
   font-style: normal;
+}
+
+a {
+  color: var(--n7-red);
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: all ease 0.4s;
+}
+
+a:hover {
+  text-decoration: underline;
+  transform: scale(1.01);
 }
 
 .intro {
