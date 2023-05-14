@@ -8,6 +8,12 @@
   --n7-red: #e42f45;
 }
 
+a {
+  color: var(--n7-red);
+  font-size: 1.05rem;
+  text-decoration: none;
+}
+
 .bg-ellipse-1 {
   border: 400px solid;
   position: fixed;
