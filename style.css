@@ -146,8 +146,13 @@ input,
 
 .opt-container p,
 .opt-container select,
-.para-select button {
+.para-select button,
+#input-box {
+  font-family: stratos, sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
   font-size: 1.2rem;
+  font-weight: 400;
 }
 
 .btns-container {
