@@ -150,7 +150,7 @@ lines[36] = {
 };
 lines[37] = {
   char: "Jacob",
-  line: "Saved the Citadel, like you, but what's the saying ? a good deed's like pissing yourself in dark pants. Warm feeling but no one notices. ",
+  line: "Saved the Citadel, like you, but what's the saying ? A good deed's like pissing yourself in dark pants. Warm feeling but no one notices. ",
 };
 lines[38] = {
   char: "Wrex",
@@ -599,7 +599,7 @@ lines[158] = {
 };
 lines[159] = {
   char: "Miranda",
-  line: "Omega. What a pisshole. At least it keeps you on your toes. I've had to come here on business before. I feel like I need a shower afterward - in addition to normal decontamination. ",
+  line: "Omega. What a pisshole. At least it keeps you on your toes. ",
 };
 lines[160] = {
   char: "Miranda",
@@ -1306,6 +1306,10 @@ lines[347] = {
 lines[348] = {
   char: "Kaidan",
   line: "Big place. ",
+};
+lines[349] = {
+  char: "Miranda",
+  line: "I've had to come here on business before. I feel like I need a shower afterward - in addition to normal decontamination. ",
 };
 
 export { lines };
