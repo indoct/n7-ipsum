@@ -104,6 +104,10 @@ h3 {
   position: relative;
 }
 
+select {
+  color: var(--n7-black);
+}
+
 .normandy {
   opacity: 0.7;
 }
@@ -414,7 +418,7 @@ input {
 /* iPad Pro (1024) */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   #para-container {
-    padding: 6rem 6rem 2rem;
+    padding: 7.5rem 4rem 2rem;
   }
   .quote-paras {
     font-size: 1.3rem;
@@ -423,12 +427,16 @@ input {
     font-size: 1.2rem;
   }
   .options {
-    max-width: 960px;
+    max-width: 95%;
   }
   .btns-container {
     column-gap: 7px;
     padding-right: 0;
     padding-left: 8px;
+  }
+  h1,
+  h3 {
+    text-align: center;
   }
 }
 
