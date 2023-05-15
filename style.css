@@ -491,7 +491,7 @@ input {
   }
   .generate-btn,
   .copy-btn {
-    padding: 1rem 0;
+    padding: 1.4rem 0;
     width: 50%;
   }
 }
@@ -502,5 +502,24 @@ input {
   }
   .opt-container p:first-child {
     display: none;
+  }
+}
+
+/* XXS Devices */
+@media only screen and (max-width: 375px) {
+  .options p {
+    display: none;
+  }
+  .opt-container {
+    justify-content: center;
+  }
+  h3 {
+    letter-spacing: 0.01rem;
+  }
+  h1 {
+    font-size: 2.9rem;
+  }
+  #hero .row {
+    margin-bottom: 0.5rem;
   }
 }
