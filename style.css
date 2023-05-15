@@ -323,10 +323,6 @@ input {
     flex-direction: column-reverse;
     margin-bottom: 1.5rem;
   }
-  #hero .col {
-    flex: 0 0 auto;
-    width: 75%;
-  }
   h1,
   h3,
   .intro {
