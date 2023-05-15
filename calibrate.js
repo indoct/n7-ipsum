@@ -21,18 +21,20 @@ const randomIndex = () => {
 };
 
 // Vary the length of the paragraphs occasionally
-// const randLength = Math.floor(Math.random() * 2) === 0 ? 4 : 5;
-// const randLength = Math.random() * (6 - 3) + 3;
-const returnRand = (min, max) => {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  randLength = Math.floor(Math.random() * (max - min) + min);
+const returnRand = () => {
+  randLength = Math.floor(Math.random() * 2) === 0 ? 4 : 5;
   return randLength;
 };
+// const returnRand = (min, max) => {
+//   min = Math.ceil(min);
+//   max = Math.floor(max);
+//   randLength = Math.floor(Math.random() * (max - min) + min);
+//   return randLength;
+// };
 
 // Join lines into 1 paragraph
 const randomLines = () => {
-  returnRand(3, 6);
+  returnRand();
   let para = [];
   for (let i = 0; i < randLength; i++) {
     para += lines[randomIndex()].line;

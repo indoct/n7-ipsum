@@ -394,7 +394,7 @@ lines[103] = {
 };
 lines[104] = {
   char: "Joker",
-  line: "No, no no! Let's uh... EDI's pretty busy with, you know, stuff. Let's, uh send that to me. You're not gonna tell anyone about this, right? Like Shepard? Shepard doesn't really need to know. ",
+  line: "No, no no! Let's uh... EDI's pretty busy with, you know, stuff. Let's, uh send that to me. ",
 };
 lines[105] = {
   char: "Joker",
@@ -631,7 +631,7 @@ lines[166] = {
 };
 lines[167] = {
   char: "Mordin",
-  line: "I am the very model of a scientist salarian, ",
+  line: "I am the very model of a scientist salarian! ",
 };
 lines[168] = {
   char: "Samara",
@@ -1310,6 +1310,10 @@ lines[348] = {
 lines[349] = {
   char: "Miranda",
   line: "I've had to come here on business before. I feel like I need a shower afterward - in addition to normal decontamination. ",
+};
+lines[350] = {
+  char: "Joker",
+  line: "You're not gonna tell anyone about this, right? Like Shepard? Shepard doesn't really need to know. ",
 };
 
 export { lines };
