@@ -378,7 +378,7 @@ input {
   }
 }
 
-/* Ipad */
+/* iPad regular */
 @media only screen and (max-width: 768px) {
   #hero .row {
     flex-direction: column-reverse;
@@ -418,10 +418,11 @@ input {
 /* iPad Pro (1024) */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   #para-container {
-    padding: 7.5rem 4rem 2rem;
+    padding: 7.3rem 4rem 2rem;
   }
   .quote-paras {
     font-size: 1.3rem;
+    line-height: 1.4;
   }
   .intro {
     font-size: 1.2rem;
@@ -437,6 +438,9 @@ input {
   h1,
   h3 {
     text-align: center;
+  }
+  .opt-container p:first-child {
+    display: none;
   }
 }
 
