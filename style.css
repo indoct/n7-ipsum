@@ -328,15 +328,22 @@ input {
   .intro {
     text-align: center;
   }
-  .btns-container {
+  /* .btns-container {
     padding-right: 0;
     padding-left: 5px;
+  } */
+  .btns-container {
+    padding: 0;
+    column-gap: 5px;
+    margin-top: 0.5rem;
+  }
+  .generate-btn,
+  .copy-btn {
+    padding: 1rem 0;
+    width: 50%;
   }
   .options {
     max-width: 720px;
-  }
-  .opt-container p:first-child {
-    display: none;
   }
   .btns-container {
     column-gap: 5px;
@@ -423,16 +430,6 @@ input {
   .content-row .col {
     padding: 0 !important;
   }
-  .btns-container {
-    padding: 0;
-    column-gap: 5px;
-    margin-top: 0.5rem;
-  }
-  .generate-btn,
-  .copy-btn {
-    padding: 1rem 0;
-    width: 50%;
-  }
   .opt-container p:first-child {
     display: none;
   }
@@ -490,5 +487,19 @@ input {
   }
   .opt-container p:nth-child(even) {
     font-size: 1rem;
+  }
+}
+
+/* Misc */
+@media only screen and (max-width: 567px) {
+  .btns-container {
+    padding: 0;
+    column-gap: 5px;
+    margin-top: 0.5rem;
+  }
+  .generate-btn,
+  .copy-btn {
+    padding: 1rem 0;
+    width: 50%;
   }
 }
