@@ -106,8 +106,13 @@ h3 {
 
 select {
   color: var(--n7-black);
+  background-color: var(--n7-white);
 }
 
+input {
+  border-radius: 0;
+  appearance: none;
+}
 .normandy {
   opacity: 0.7;
 }
