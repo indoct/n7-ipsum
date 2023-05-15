@@ -5,7 +5,7 @@
   --n7-mgrey: #a5a5a5;
   --n7-dgrey: #222020;
   --n7-muted: #5c5c5c;
-  --n7-red: #e42f45;
+  --n7-red: #ed2741;
 }
 
 .bg-ellipse-1 {
@@ -37,6 +37,7 @@ button {
   font-family: stratos-lights, sans-serif;
   font-weight: 300;
   font-style: normal;
+  text-rendering: optimizeLegibility;
 }
 
 a {
@@ -236,16 +237,9 @@ input[type="number"]::-webkit-outer-spin-button {
 button {
   letter-spacing: 0.0325rem;
   font-weight: 600;
-  /* height: 56px;
-  margin-left: 10px;
-  padding: 0 20px; */
   border: 0;
   border-radius: 0;
 }
-
-/* .generate-btn:hover {
-  cursor: pointer;
-} */
 
 select,
 input {
@@ -253,8 +247,9 @@ input {
 }
 
 .generate-btn {
-  background: var(--n7-red);
-  color: var(--n7-black);
+  background: #af1236;
+  color: var(--n7-white);
+  text-shadow: 0 0 2px var(--n7-black);
   width: 60%;
   border: 2px solid var(--n7-red);
   transition: all ease 0.3s;
@@ -283,6 +278,11 @@ input {
   box-shadow: 0 0 12px hsl(353 77% 61% / 30%);
   /* transform: translateY(-5px); */
   transform: scale(1.02);
+}
+
+.generate-btn,
+.copy-btn {
+  line-height: 1.2;
 }
 
 #para-container {
@@ -344,11 +344,6 @@ input {
     padding-right: 0;
     padding-left: 5px;
   }
-  /* .btns-container {
-    padding: 0;
-    column-gap: 5px;
-    margin-top: 0.5rem;
-  } */
   .generate-btn,
   .copy-btn {
     padding: 1rem 0;
@@ -419,7 +414,7 @@ input {
     margin-top: 0;
   }
   #para-container {
-    padding: 0.5rem;
+    padding: 1.5rem 0.5rem 0.5rem;
     border: 0;
   }
   .quote-paras {
@@ -529,6 +524,5 @@ input {
   .generate-btn,
   .copy-btn {
     padding: 0.84rem 0;
-    line-height: 1.2;
   }
 }
