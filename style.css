@@ -389,6 +389,9 @@ input {
   h3 {
     text-align: center;
   }
+  .options {
+    max-width: 95%;
+  }
 }
 
 /* Mobile */
@@ -497,9 +500,6 @@ input {
 }
 
 @media only screen and (max-width: 1024px) {
-  .options {
-    max-width: 95%;
-  }
   .opt-container p:first-child {
     display: none;
   }
