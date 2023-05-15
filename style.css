@@ -380,9 +380,6 @@ input {
   .intro {
     font-size: 1.2rem;
   }
-  .options {
-    max-width: 95%;
-  }
   .btns-container {
     column-gap: 7px;
     padding-right: 0;
@@ -501,5 +498,11 @@ input {
   .copy-btn {
     padding: 1rem 0;
     width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .options {
+    max-width: 95%;
   }
 }
