@@ -417,8 +417,11 @@ input {
 
 /* iPad Pro (1024) */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #hero .row {
+    margin: 2rem auto;
+  }
   #para-container {
-    padding: 7.3rem 4rem 2rem;
+    padding: 7.1rem 4rem 2rem;
   }
   .quote-paras {
     font-size: 1.3rem;
