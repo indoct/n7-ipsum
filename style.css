@@ -8,6 +8,10 @@
   --n7-red: #ed2741;
 }
 
+/* html {
+  color-scheme: dark !important;
+} */
+
 .bg-ellipse-1 {
   border: 400px solid;
   position: fixed;
@@ -321,6 +325,23 @@ button {
 button:hover {
   cursor: pointer;
 }
+
+/* Spinner */
+
+input[type="number"]::-webkit-inner-spin-button {
+  width: 10px;
+  height: 30px;
+  padding: 4px;
+}
+
+input[type="number"]::-webkit-inner-spin-button:first-child {
+  margin-bottom: 20px;
+}
+
+/* input[type="number"]::-webkit-outer-spin-button {
+  width: 80px;
+  height: 60px;
+} */
 
 /* -- Media Queries -- */
 /* Desktop */
