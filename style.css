@@ -104,7 +104,7 @@ a:hover {
 }
 
 body {
-  background: var(--n7-black) url("images/stardust.png") repeat;
+  background: var(--n7-black) url("images/stardust.webp") repeat;
   color: var(--n7-white);
 }
 
