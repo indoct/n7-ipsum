@@ -1,4 +1,4 @@
-/* Hand-coded with ♥ by SCHO (https://scho.pro) */
+/* Hand-coded with ♥ by SCHO (https://schodigital.com) */
 "use strict";
 
 import { lines } from "./lines.js";
@@ -25,12 +25,6 @@ const returnRand = () => {
   randLength = Math.floor(Math.random() * 2) === 0 ? 4 : 5;
   return randLength;
 };
-// const returnRand = (min, max) => {
-//   min = Math.ceil(min);
-//   max = Math.floor(max);
-//   randLength = Math.floor(Math.random() * (max - min) + min);
-//   return randLength;
-// };
 
 // Join lines into 1 paragraph
 const randomLines = () => {

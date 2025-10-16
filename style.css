@@ -1,16 +1,48 @@
+@font-face {
+    font-family: 'Stratos';
+    src: url('webfonts/Stratos-SemiLight.woff') format('woff2'),
+        url('webfonts/Stratos-SemiLight.woff2') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stratos';
+    src: url('webfonts/Stratos-Regular.woff2') format('woff2'),
+        url('webfonts/Stratos-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Funnel Sans';
+    src: url('webfonts/FunnelSans-Light.woff2') format('woff2'),
+        url('webfonts/FunnelSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zen Dots';
+    src: url('webfonts/ZenDots-Regular.woff2') format('woff2'),
+        url('webfonts/ZenDots-Regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
   --n7-black: #0d0c0c;
   --n7-white: #fdfdfd;
   --n7-pgrey: #d3d3d3;
   --n7-mgrey: #a5a5a5;
   --n7-dgrey: #222020;
-  --n7-muted: #5c5c5c;
+  --n7-muted: #838183;
   --n7-red: #ed2741;
 }
-
-/* html {
-  color-scheme: dark !important;
-} */
 
 .bg-ellipse-1 {
   border: 400px solid;
@@ -37,13 +69,11 @@ html,
 body,
 p,
 select,
+option,
 button {
-  font-family: stratos-lights, sans-serif;
+  font-family: 'Stratos', sans-serif;
   font-weight: 300;
   font-style: normal;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale; /*(For Firefox)*/
-  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -98,11 +128,10 @@ h1 {
 }
 
 h3 {
-  font-family: stratos, sans-serif;
+  font-family: 'Stratos', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.4;
-  font-style: italic;
   color: var(--n7-muted);
   text-align: right;
   letter-spacing: 0.0325rem;
@@ -116,7 +145,6 @@ h3 {
 
 select {
   color: var(--n7-black);
-  /* background-color: #ccc9c2; */
 }
 
 input,
@@ -138,7 +166,6 @@ input,
   color: var(--n7-muted);
   padding: 4rem 0;
   text-align: center;
-  /* font-style: italic; */
 }
 
 .opt-container {
@@ -157,9 +184,7 @@ input,
 .opt-container select,
 .para-select button,
 #input-box {
-  font-family: stratos, sans-serif;
-  /* text-transform: uppercase;
-  font-style: italic; */
+  font-family: 'Stratos', sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
 }
@@ -218,7 +243,6 @@ input[type="number"]::-webkit-outer-spin-button {
   border: none;
   outline: none;
   border: 2px solid var(--n7-black);
-  /* border-radius: 0 !important; */
 }
 
 #type-select:disabled {
@@ -282,10 +306,8 @@ button {
 
 .copy-btn:hover {
   cursor: pointer;
-  /* background-color: rgba(39, 43, 47, 0.6); */
   border-color: hsl(0deg 0% 99% / 20%);
   box-shadow: 0 0 12px hsl(353 77% 61% / 30%);
-  /* transform: translateY(-5px); */
   transform: scale(1.02);
 }
 
@@ -304,22 +326,19 @@ button {
 }
 
 .quote-paras {
-  font-family: "arimo", sans-serif;
-  font-weight: 400;
+  font-family: "Funnel Sans", sans-serif;
+  font-weight: 300;
   font-size: 1.2rem;
-  line-height: 1.54;
+  line-height: 1.6;
   letter-spacing: 0.00525rem;
   color: hsl(41 35% 90% / 1);
-  -moz-osx-font-smoothing: grayscale; /*(For Firefox)*/
-  -webkit-font-smoothing: antialiased; /*(For Chrome and Safari)*/
 }
 
 .copyright {
   color: var(--n7-muted);
-  font-size: 0.8rem;
-  font-style: italic;
+  font-size: 0.85rem;
   margin-bottom: 0;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 button:hover {
@@ -337,11 +356,6 @@ input[type="number"]::-webkit-inner-spin-button {
 input[type="number"]::-webkit-inner-spin-button:first-child {
   margin-bottom: 20px;
 }
-
-/* input[type="number"]::-webkit-outer-spin-button {
-  width: 80px;
-  height: 60px;
-} */
 
 /* -- Media Queries -- */
 /* Desktop */
